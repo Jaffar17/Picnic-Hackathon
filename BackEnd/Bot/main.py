@@ -197,6 +197,6 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
         await manager.broadcast(json.dumps(message))
 
 if __name__ == "__main__":
-    public_url = ngrok.connect(8000).public_url
-    print(public_url)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+#     public_url = ngrok.connect(8000).public_url
+#     print(public_url)
+    uvicorn.run(app)
